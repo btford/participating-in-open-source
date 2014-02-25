@@ -267,7 +267,7 @@ Community is more valuable than code, and being nice is more important than bein
 
 Thanks for taking the time to read this.
 It's my hope this guide will help you get what you want out of open source while at the same time improving it for others.
-If you have any suggestions, [please create an issue]().
+If you have any suggestions, please create a [pull request](https://github.com/btford/participating-in-open-source/pulls) or [issue](https://github.com/btford/participating-in-open-source/issues).
 
 
 ## License
