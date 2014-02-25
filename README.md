@@ -273,4 +273,4 @@ If you have any suggestions, [please create an issue]().
 ## License
 MIT
 
-![Analytics](https://ga-beacon.appspot.com/UA-48392963-1/btford/participating-in-open-source)
+![Analytics](https://ga-beacon.appspot.com/UA-48392963-1/btford/participating-in-open-source?pixel)
