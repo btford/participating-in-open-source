@@ -138,7 +138,7 @@ The golden rule of submitting PRs is to do things the way the project maintainer
 You can't read the minds of the project maintainers, but you can look what they did in the past.
 Considering these things upfront can really help streamlining the process of getting your change accepted.
 
-Simply put: try to immitate the style of the existing code.
+Simply put: try to imitate the style of the existing code.
 Pay attention to the indentation and brace style in the code.
 Does the style use or avoid early `return`s?
 
