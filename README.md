@@ -1,6 +1,6 @@
 # Participating in Open Source
 
-This guide is for anyone who wants to help contribute to an open source project on GitHub.
+I wrote this guide to help anyone start contributing to open source projects on GitHub.
 First, thanks for your initiative to help out!
 One of the reasons that open source is so great is because of the eagerness of others to help.
 
@@ -8,21 +8,23 @@ Whether you've been programming for many years or are brand new, there are a few
 There are many guides on "how" to use GitHub from a technical perspective: which buttons to press, what commands to run, etc.
 Below I've included some of my favorites.
 
+<aside>
+Please [tweet](https://twitter.com/briantford) me or file an [issue](https://github.com/btford/participating-in-open-source/issues) if you know of a good addition to this list!
+</aside>
+
 * [git-it](https://github.com/jlord/git-it) – an interactive tutorial for learning how to use `git` and GitHub
 * [GitHub's help page](https://help.github.com/) – find advice on specific topics
 
-Please [tweet](https://twitter.com/briantford) me or file an [issue](https://github.com/btford/participating-in-open-source/issues) if you know of a good addition to this list!
-
+At first, it's intimidating to publicly your work on GitHub.
 Few guides address "how" you should use it in terms of etiquette, best practices, and expectations.
-It can be intimidating to publicize your work on GitHub.
-This guide aims to fill in those gaps so you can have some confidence as you enter the open source world.
+This guide aims to fill in those gaps.
 
 As you read this guide, please keep in mind that it's okay (and even expected!) to make mistakes.
 You don't have to memorize every minute detail.
-Just do the best you can and learn as you go.
+Do the best you can and learn as you go.
 
-This guide will assume you are dealing with a JavaScript module installed via `npm` or `bower` that is hosted on GitHub.
-Most of the advice is generic for other platforms and languages, but specific commands dealing with `npm` or `bower` probably won't apply.
+This guide assumes you are dealing with a JavaScript module installed via `npm` or `bower` that is hosted on GitHub.
+Aside from commands dealing with `npm` or `bower`, most of this advice applies to other platforms and languages.
 
 
 
@@ -35,7 +37,9 @@ If your question is something that has been answered many times before, the proj
 If the project is small, it's usually fine to ask questions on GitHub by filing an issue.
 If the project is large, they might have a mailing list or IRC channel that would be a better place to ask.
 StackOverflow is also a great resource.
-Emailing or tweeting at the maintainer(s) might also be a good way to get a question answered, but is generally a worse approach than posting publicly.
+Whenever possible, ask your question on a public forum.
+This allows anyone to answer and makes the answer available for the next person with the same question.
+If all else fails, you might tweet at or email the maintainer(s).
 
 
 
@@ -74,10 +78,6 @@ This will create a copy of the repo on your GitHub account.
 Before you set out to improve the code, you should have a focused idea in mind of what you want to do.
 A commit should do one thing.
 
-As far as code style, just try to imitate the style of existing code.
-Don't sweat over this too much.
-If the maintainer doesn't like how your code looks, they'll probably give you a few pointers and you can make the changes.
-
 ### Forking
 
 TODO: this
@@ -106,6 +106,10 @@ As you're changing the code, you might want to try it within some app or larger 
 `bower link`,
 or symlinks
 
+
+As far as code style, just try to imitate the style of existing code.
+Don't sweat over this too much.
+If the maintainer doesn't like how your code looks, they'll suggest changes.
 
 Most projects have a set of tests to make sure that the existing functionality of the code stays the same as you make changes.
 This helps keep the software stable.
@@ -182,8 +186,9 @@ Assuming the maintainer responds, there are three possible outcomes for your PR:
 
 #### Fixing Issues in the PR
 
-When asked to make a change to a PR, A common mistake of newcomers to GitHub is to close and create a new one.
-There's no need to do this! It's pretty easy to update the existing one.
+When asked to make a change to a PR, newcomers oft mistakenly close the existing PR and create a new one.
+There's no need to do this!
+It's easy to update the existing one.
 
 First, make your changes to the relevant file(s).
 As you've done before, stage the file with `git add`:
@@ -266,7 +271,7 @@ Community is more valuable than code, and being nice is more important than bein
 ## Conclusion
 
 Thanks for taking the time to read this.
-It's my hope this guide will help you get what you want out of open source while at the same time improving it for others.
+I hope this guide will help you get what you want out of open source.
 If you have any suggestions, please create a [pull request](https://github.com/btford/participating-in-open-source/pulls) or [issue](https://github.com/btford/participating-in-open-source/issues).
 
 
