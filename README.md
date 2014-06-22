@@ -76,7 +76,8 @@ The best way is to "Fork" the repo on GitHub.
 This will create a copy of the repo on your GitHub account.
 
 Before you set out to improve the code, you should have a focused idea in mind of what you want to do.
-A commit should do one thing.
+
+Each commit should do one thing, and each PR should be one specific improvement.
 
 ### Forking
 
@@ -216,7 +217,13 @@ http://git-scm.com/book/en/Git-Tools-Rewriting-History
 
 #### My PR was Closed but I Still Want to use my Changes!
 
-Good news: even if your change isn't accepted into the contributor's repository, you can still use it.
+**Good news:** even if your change isn't accepted into the contributor's repository, you can still use it.
+
+npm allows you to install from a GitHub repo
+
+```shell
+$ npm install user/repo
+```
 
 Better yet, you can use your changes while staying up-to-date on the original repo's code.
 This is often referred to as "maintaining a fork" of a project.
@@ -228,6 +235,91 @@ Our fork on GitHub has the remote name `origin`.
 TODO: note about git remotes
 TODO: maintaining a fork (merging "upstream" changes)
 TODO: typically there's no reason to publish your fork, you can reference the SHA on github and DL a zip.
+
+
+
+## Starting a Project
+
+Before you start a project, please do thorough research that something like what you want to make
+doesn't already exist.
+
+
+### Searching for Existing Projects
+
+```shell
+$ npm search
+```
+
+Sometimes you find a project that's old and no longer maintained, but otherwise solves your problems.
+See the [using a fork](TODO) section above for more info.
+
+<aside>
+**Bonus:** Make a list as you go with notes.
+If you find a module you like, you can use your notes to improve the "See Also" section of the
+modules you found in your research by sending them PRs.
+If you don't find a module you like and end up creating your own, you can turn these notes into a
+"See Also" section for your module!
+</aside>
+
+
+### Starting a Project
+
+Starting a new open source project should be your last resort.
+Why?
+
+**Best Practice:** Don't publish something to `npm` until it has some reasonable minimal functionality.
+
+Remember: you can always use `npm link` or `npm install user/repo`
+
+### Naming the project
+
+If your module is a plugin, it's usually best to prefix it based on what it's a plugin for.
+Some projects have guidelines or conventions on how to do this.
+For instance, AngularJS components are usually named `angular-something`, Gulp plugins are
+`gulp-something`, and Karma plugins are `karma-something`.
+
+### Writing a Readme
+
+A good readme should have the following parts.
+
+#### One Sentence Explanation
+
+#### "Install"
+
+#### "See Also"
+
+This is really important.
+If there are other modules with similar functionality, your module should explain how it differs
+from each one.
+This section should link to the other modules.
+This will help someone decide when to use your module.
+
+### Writing tests
+
+There are many ways to write tests.
+The important thing is that if the tests fail, the process should exist with an error code.
+You can use `assert` or `if (condition) { process.exit(1) }` to achieve this.
+
+I like to use `jasmine-node`.
+
+Bonus points if you have a CI tool like [TravisCI][]
+
+### Publishing to npm
+
+Before you publish:
+
+1. You have a `README.md` that explains what the module does.
+   It should incude a `See Also` section that links to other similar packages.
+   See TODO for an example.
+2. You should have [tests](#writing-tests).
+   The tests should run with `npm test`, and they should pass.
+
+<aside>
+**Bonus:** Find someone else who will help you maintain the project.
+It's great to have help reviewing issues and merging PRs.
+You never know how much free time you'll have in the future.
+It would be unfortunate if bugs unfixed or PRs unmerged on an otherwise useful project.
+</aside>
 
 
 
@@ -279,3 +371,5 @@ If you have any suggestions, please create a [pull request](https://github.com/b
 MIT
 
 ![Analytics](https://ga-beacon.appspot.com/UA-48392963-1/btford/participating-in-open-source?pixel)
+
+[TravisCI]: TODO
