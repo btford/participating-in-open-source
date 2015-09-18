@@ -15,7 +15,7 @@ Please [tweet](https://twitter.com/briantford) me or file an [issue](https://git
 * [git-it](https://github.com/jlord/git-it) – an interactive tutorial for learning how to use `git` and GitHub
 * [GitHub's help page](https://help.github.com/) – find advice on specific topics
 
-At first, it's intimidating to publicly your work on GitHub.
+At first, it's intimidating to publicize your work on GitHub.
 Few guides address "how" you should use it in terms of etiquette, best practices, and expectations.
 This guide aims to fill in those gaps.
 
